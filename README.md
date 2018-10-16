@@ -1,6 +1,6 @@
 # Timeline
 
-#### Prototype Stage (DUE DATE: October 30th, 2018):
+### Prototype Stage (DUE DATE: October 30th, 2018):
 	
 1. Creating a basic smart contract
 2. Starting to build and understand the structure of the program
