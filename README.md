@@ -11,7 +11,7 @@
 ### Implementation Stage (DUE DATE: November 19th, 2018):
 
 1. Implementing the voting ballot
-2.Counting all votes
+2. Counting all votes
 3. Reporting a winner
 4. Ensuring users are confidential
 5. Ensuring there can’t double vote
