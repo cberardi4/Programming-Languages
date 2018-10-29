@@ -5,8 +5,8 @@
 1. Creating a basic smart contract
 2. Starting to build and understand the structure of the program
 3. Sandboxed testing of basic smart contract
-4. Blog post about prototype process
-5. Blog post about looping mechanism in Solidity
+4. Blog post about prototype process (Pushed to next sprint)
+5. Blog post about looping/recursive mechanism in Solidity (Implemented recursive factorial, writing post pushed to next sprint)
 
 ### Implementation Stage (DUE DATE: November 19th, 2018):
 
