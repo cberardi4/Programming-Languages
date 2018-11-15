@@ -75,6 +75,7 @@ No.
 Yes (equal number of a’s to b’s).
 
 - Can you find a nice way of stating which words are in the equivalence class of ba?
+
 In the equivalence class of ba, the number of b’s minus the number of a’s is even.
 
 - Can you list some properties of words that remain invariant under application of rules?[1]
