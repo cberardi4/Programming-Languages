@@ -13,7 +13,7 @@ within that contract on the EVM. In this case, we have the Factorial function. B
 program looks like when deployed in the Remix IDE. When an integer is input into the UI text box that says uint256 n and then 
 the Factorial button is clicked, the output is returned. 
 
-![alt text](/⁨Desktop⁩/remix.png?raw=true "Remix")
+
 
 ```
 pragma solidity ^0.4.0;
