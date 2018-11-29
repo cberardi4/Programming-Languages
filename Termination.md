@@ -6,12 +6,12 @@ measure function. In this case, the measure function is n, even though the value
 step, n decreases by (n-1).  Therefore, ϕ(a)>ϕ(b). 
 
 The code below shows recursion in Solidity with the classic factorial example. We have a contract titled Recursion which 
-has two functions, Factorial and Result. Both these functions return values of type uint256. The Factorial function merely 
-implements the recursive definition of factorial and the Result function calls Factorial with an integer input for the 
-factorial that we want to calculate. Essentially, each time this is run a contract is deployed and functions can be run 
-within that contract on the EVM. In this case, we have the Factorial function. Below there is a screen capture of what the 
-program looks like when deployed in the Remix IDE. When an integer is input into the UI text box that says uint256 n and then 
-the Factorial button is clicked, the output is returned. 
+has the function Factorial. This function return values of type uint256. The Factorial function merely implements the recursive definition of a factorial, with an integer input for the factorial that we want to calculate. Essentially, each time this is run, a contract is deployed and functions can be run within that contract on the EVM. In this case, we have the Factorial function. Below there is a screen capture of what the program looks like when deployed in the Remix IDE. When an integer is input into the UI text box that says uint256 n and then the Factorial button is clicked, the output is returned. 
+
+
+
+![](remix.png)
+
 
 
 
