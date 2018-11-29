@@ -22,7 +22,7 @@ Contract school
 {
   struct Student 
   {
-	  uint grade;
+    uint grade;
     string firstName;
     string lastName;
   }
