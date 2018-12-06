@@ -25,3 +25,7 @@
 3. Implement finishing touches
 4. Blog post about testing process
 5. Final blog post about Solidity and project
+
+
+### Link to Presentation:
+[Google Presentation](https://docs.google.com/presentation/d/1Qq9NI_bCsD094DYTSM06f6LpO85EKZa4h9-PVh_4pnM/edit?usp=sharing)
