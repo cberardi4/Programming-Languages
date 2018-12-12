@@ -10,7 +10,7 @@ has the function Factorial. This function return values of type uint256. The Fac
 
 
 
-![](remix.png)
+![](Screenshots/remix.png)
 
 
 
