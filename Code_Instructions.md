@@ -7,14 +7,17 @@ In this blog, we will explain how to download and run our program. After that, w
 First, navigate to the [Solidity IDE](https://remix.ethereum.org). Close out the example program that is loaded by default. 
 From here, there are two options on how to run the program. Those options are laid out below.
 
+
 **Option 1:** 
 In that new file put the following two lines. The github URL is https://github.com/benwasserman1/solidity_code/ballot.sol
 
 **Option 2:** 
 Open up a new terminal window on Mac or Git Bash on Windows. Then navigate to a directory of your choosing, and run 
+
 ```
 git clone https://github.com/benwasserman1/solidity_code.git
 ```
+
 This will copy the appropriate files onto your computer. Return to  the [Solidity IDE](https://remix.ethereum.org), select 
 the folder button in the upper left hand corner, and open up ballot.sol. 
 
@@ -24,7 +27,7 @@ the folder button in the upper left hand corner, and open up ballot.sol.
 
 ### Choosing the proper compiler
 
-It is important to ensure that you are using the proper compiler. On the drop down menu in the "Compile" tab on the right hand side of the page (shown in screenshot below), click "Select ew compiler version." Choose “0.4.25+commit.59dbf8f1” and click “Start compile”. Below is a screenshot of what the compiler looks like within the menu.
+It is important to ensure that you are using the proper compiler. On the drop down menu in the "Compile" tab on the right hand side of the page (shown in screenshot below), click "Select new compiler version." Choose “0.4.25+commit.59dbf8f1” and click “Start compile”. Below is a screenshot of what the compiler looks like within the menu.
 
 
 ![](Screenshots/compile1.png)
@@ -68,7 +71,7 @@ If you try to vote again from that contract, it will not change any of the votin
 
 The first function is the constructor. In the constructor, we push the names of the candidates to the array and initialize their vote count to 0.
 
- Next, we have a vote function that doesn’t return anything but takes an integer as input. This integer represents the index in the array for which the voter wants to cast a vote. Within the function, the first line is of particular interest to break down a little further. With the line Voter storage sender = voters[msg.sender], the user has officially “cast” their vote. On the left side of the equal sign, we are creating a new Voter struct for the new vote and saving it in storage, hence the “storage” keyword. We must do this every time someone votes to create a new “ballot” for the “ballot box.”  After that, we merely ensure that the vote is within the bounds of the size of the candidate array. Solidity uses the “require()” function to do this. Require is a function specific to error handling in Solidity, specifically to check conditions on user input. After that, we check to make sure that the person has not previously voted. If they haven’t,
+ Next, we have a vote function that doesn’t return anything but takes an integer as input. This integer represents the index in the array for which the voter wants to cast a vote. Within the function, the first line is of particular interest to break down a little further. With the line Voter storage sender = voters[msg.sender], the user has officially “cast” their vote. On the left side of the equal sign, we are creating a new Voter struct for the new vote and saving it in storage, hence the “storage” keyword. We must do this every time someone votes to create a new “ballot” for the “ballot box.” On the right hand side, we are taking the own of the contract (msg.sender), and inputing that into the voters mapping. After that, we merely ensure that the vote is within the bounds of the size of the candidate array. Solidity uses the “require()” function to do this. Require is a function specific to error handling in Solidity, specifically to check conditions on user input. After that, we check to make sure that the person has not previously voted. If they haven’t,
 
  we mark that the person has voted,
 ```
@@ -85,7 +88,7 @@ In the last line, we use emit to add to the logs that every person has voted. If
 ![](Screenshots/vote.png)
 
 
-The last couple of functions are relatively simple and do not showcase any Solidity-specific functionality. Nonetheless, I will explain the code.
+The last couple of functions are relatively simple and do not showcase any Solidity-specific functionality. Nonetheless, we will explain the code.
 
 The showVotes() method takes no input and returns the candidate array. This allows the user to see which candidate has the most votes. The number after the name and comma is the number of votes for that candidate. To run it yourself, click the purple box that says “showCandidates.”
 
