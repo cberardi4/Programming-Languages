@@ -19,26 +19,42 @@ This will copy the appropriate files onto your computer. Return to  the [Solidit
 the folder button in the upper left hand corner, and open up ballot.sol. 
 
 
+![](Screenshots/folder.png)
+
+
 ### Choosing the proper compiler
 
 It is important to ensure that you are using the proper compiler. On the drop down menu in the "Compile" tab on the right hand side of the page (shown in screenshot below), click "Select ew compiler version." Choose “0.4.25+commit.59dbf8f1” and click “Start compile”. Below is a screenshot of what the compiler looks like within the menu.
 
-[](Screenshots/compile1)
 
-Deploying the contract - Now switch to the run tab in the upper right hand corner. In this tab there will be an option to deploy the ballot.sol contract.
+![](Screenshots/compile1.png)
 
+
+![](Screenshots/commit.png)
+
+
+![](Screenshots/compile.png)
+
+### Deploying the contract
+
+Now switch to the run tab in the upper right hand corner. In this tab there will be an option to deploy the ballot.sol contract.
+
+
+![](Screenshots/deploy.png)
 
 
 Click “Deploy” and you should see an address along with the title of the contract, “Ballot” pop up underneath the section named “Deployed Contracts.” 
 
 
+![](Screenshots/contracts.png)
+
 
 Click on the arrow to the left of the address to expand the section. There will be a few buttons that are interactable. These buttons are the prototype for how we’ve been testing our program. Each button is the implementation of a function. We will go into more detail about what the different colors mean and how the functions work later on. The address that is shown here is the address that on the blockchain that our contract now resides. This is extremely important if we were to truly deploy this contract and turn it into a Dapp. 
 
-For anyone interested in learning about how to turn a Solidity smart contract into a Dapp, the following article was extremely helpful for me when I was walking through the steps: https://medium.com/ethereum-developers/the-ultimate-end-to-end-tutorial-to-create-and-deploy-a-fully-descentralized-dapp-in-ethereum-18f0cf6d7e0e
+For anyone interested in learning about how to turn a Solidity smart contract into a Dapp, this [article](https://medium.com/ethereum-developers/the-ultimate-end-to-end-tutorial-to-create-and-deploy-a-fully-descentralized-dapp-in-ethereum-18f0cf6d7e0e) was extremely helpful for me when I was walking through the steps: 
 
 
-Explanation of Code:
+### Explanation of Code:
 
 Solidity is often confusing at first, so I’m going to walk through our code step by step. Hopefully this helps anyone reading the blog understand the code a little better, and start to work on their own code and deploy their own Dapp! 
 
@@ -66,7 +82,7 @@ candidates[candidate].votes += 1;
 In the last line, we use emit to add to the logs that every person has voted. If you would like to vote, enter either a 1 or a 0 to the “vote” input box then click on the red “vote” button. This box is indicated by the red arrow below.
 
 
-
+![](Screenshots/vote.png)
 
 
 The last couple of functions are relatively simple and do not showcase any Solidity-specific functionality. Nonetheless, I will explain the code.
@@ -74,7 +90,13 @@ The last couple of functions are relatively simple and do not showcase any Solid
 The showVotes() method takes no input and returns the candidate array. This allows the user to see which candidate has the most votes. The number after the name and comma is the number of votes for that candidate. To run it yourself, click the purple box that says “showCandidates.”
 
 
+![](Screenshots/showVotes.png)
+
 
 Lastly, the showLeader() function returns the name of the candidate with the most votes. It does this by looping through the candidate array and comparing the number of votes to a “maxVotes” variable. Every time there was a vote larger than the current max, the current winner was changed to them. The name of the person with the most votes at the end is then returned for the user to see.
 
-Below is the section which explains what each button in the “Deployed Contracts” does.
+
+![](Screenshots/showLeader.png)
+
+
+
