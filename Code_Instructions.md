@@ -112,10 +112,19 @@ The showVotes() method takes no input and returns the candidate array. This allo
 ![](Screenshots/showVotes.png)
 
 
-Lastly, the showLeader() function returns the name of the candidate with the most votes. It does this by looping through the candidate array and comparing the number of votes to a “maxVotes” variable. Every time there was a vote larger than the current max, the current winner was changed to them. The name of the person with the most votes at the end is then returned for the user to see.
+The showLeader() function returns the name of the candidate with the most votes. It does this by looping through the candidate array and comparing the number of votes to a “maxVotes” variable. Every time there was a vote larger than the current max, the current winner was changed to them. The name of the person with the most votes at the end is then returned for the user to see.
 
 
 ![](Screenshots/showLeader.png)
+
+
+
+Lastly, we must thank the Solidity documentation for its extensive help to our project. It was very informative and helpful in learning Blockchain and how to set up the environment. They provided guidance for implementing a voting application, specifically our how to get the owner of the contract to send it's vote.
+
+
+
+
+
 
 
 
