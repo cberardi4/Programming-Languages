@@ -7,10 +7,10 @@ In this blog, we will explain how to download and run our program. After that, w
 First, navigate to the [Solidity IDE](https://remix.ethereum.org). Close out the example program that is loaded by default. 
 From here, there are two options on how to run the program. Those options are laid out below.
 
-** Option 1: 
+**Option 1:** 
 In that new file put the following two lines. The github URL is https://github.com/benwasserman1/solidity_code/ballot.sol
 
-** Option 2: 
+**Option 2:** 
 Open up a new terminal window on Mac or Git Bash on Windows. Then navigate to a directory of your choosing, and run 
 ```
 git clone https://github.com/benwasserman1/solidity_code.git
@@ -19,16 +19,11 @@ This will copy the appropriate files onto your computer. Return to  the [Solidit
 the folder button in the upper left hand corner, and open up ballot.sol. 
 
 
+### Choosing the proper compiler
 
+It is important to ensure that you are using the proper compiler. On the drop down menu in the "Compile" tab on the right hand side of the page (shown in screenshot below), click "Select ew compiler version." Choose “0.4.25+commit.59dbf8f1” and click “Start compile”. Below is a screenshot of what the compiler looks like within the menu.
 
-### Choosing the proper compiler - It is important to ensure that you are using the proper compiler. On the right hand side of the page, click to select a new compiler. Choose “0.4.25+commit.59dbf8f1” and click “Start compile”. Below is a screenshot of what the compiler looks like within the menu.
-
-
-
-
-
-
-SCREENSHOT
+[](Screenshots/compile1)
 
 Deploying the contract - Now switch to the run tab in the upper right hand corner. In this tab there will be an option to deploy the ballot.sol contract.
 
