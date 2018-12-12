@@ -1,4 +1,4 @@
-# Our Program: How It Works and How To Run Tt
+# Our Program: How It Works and How To Run It
 
 ## How To Run Program:
 
@@ -65,7 +65,23 @@ To start off, we have a couple pragma directives, which are essentially compiler
 
 Next, we start to define our contract. A contract in Solidity is a collection of code that sits at a particular address on the blockchain. Within the contract, we start by declaring two structs, Voter and Candidate. The Candidate struct has two member variables: the name of the candidate and the number of votes the candidate has received. The Voter struct has two member variables: an integer for the vote and a boolean to determine if a voter has voted based on their address.
 
-In the next couple lines of code, we implement some important concepts that we covered in a previous blog post. First, we use mapping(address => Voter) public voters. This creates a public variable voters of the mapping type, which allows us to reference a Voter based on his or her address. We also create an array of the Candidate type so that we can store all the candidates that are running or were nominated for the hypothetical position. Lastly, we create an event. This is a functionality within Solidity where you can add information to the logs of the transaction when an important aspect of your program has happened. In our case, we wanted to log every time someone voted and who was voted for. This does not include their name, as this would lead to issues with confidentiality. The directions on how to view items in the log can be found HERE.
+In the next couple lines of code, we implement some important concepts that we covered in a previous blog post. First, we use mapping(address => Voter) public voters. This creates a public variable voters of the mapping type, which allows us to reference a Voter based on his or her address. We also create an array of the Candidate type so that we can store all the candidates that are running or were nominated for the hypothetical position. Lastly, we create an event. This is a functionality within Solidity where you can add information to the logs of the transaction when an important aspect of your program has happened. In our case, we wanted to log every time someone voted and who was voted for. This does not include their name, as this would lead to issues with confidentiality. The directions on how to view items in the log can be found in screenshots below.
+
+Below the text editor is the output of your program. Every time you create a transaction, information about that transaction is stored on the blockchain. This is also where your event output is stored. You can expand on this information by clicking on the arrow circled to the bottom right.
+
+![](Screenshots/transaction.png)
+
+Once expanded, it has all the information from the transaction. What we are looking for is the chunk of text that says "logs."
+This is boxed in red.
+
+
+![](Screenshots/logs.png)
+
+
+More specifically, we want to see the output from our event. In the logs section, there is an "event" entry, named "voteCast" with a second argument called "args." You can see that this is our same event that's in the code. There will be more information on that in the below section. Further information states that there was a "Vote cast." You can also see the name of who was voted for in the first index.
+
+![](Screenshots/event.png)
+
 
 If you try to vote again from that contract, it will not change any of the voting information internally. This is due to our checking that someone doesn’t vote twice. If you want to do it again, then you have to delete that contract, deploy it again, and vote freshly. This will be a completely different transaction that your last one, and information won’t be saved.
 
