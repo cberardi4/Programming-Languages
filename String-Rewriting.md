@@ -40,8 +40,16 @@ function proves termination of your modified system?
 
 In order to make this terminating while keeping the two equivalence classes the same, the first two rules could be taken out.
 This way, the normal forms of the two classes are the same, and there is no more infinite loops for the first two rules. 
-Because you can apply the rules in any order, it is easiest to solve the ARS by applying the last rule first to cancel out
-all of the b’s, and next apply the third rule and cancel out all the a’s. Once you’re left with the last two rules, the 
+Because you can apply the rules in any order, it is easiest to solve the ARS 
+
+> "solve" is not a good word here ... instead of "solve the ARS" say sth like "reduce strings in the ARS"
+by applying the last rule first to cancel out
+
+all of the b’s, and next apply the third rule and cancel out all the a’s. 
+
+> instead of "all the a's" say sth like "an even number of a's"
+
+Once you’re left with the last two rules, the 
 measure function is the length of the string.
 
 
@@ -49,6 +57,8 @@ measure function is the length of the string.
 a semantics to the ARS.
 
 Does the number of a’s and b’s matter in order for the term to terminate? Do all strings have the same normal form?
+
+> what I was thinking of was: Is the number of a's even? or Is the number of a's odd?
 
 _New Rules:_
 1. ba -> bbaa
@@ -71,6 +81,8 @@ abab -> aabb using rule #3
 - Can one reduce ba to abbaababbab?
 No.
 
+> How do you know? Can you say why this is the correct answer?
+
 - Can one reduce ba to abbaababbaba?
 Yes (equal number of a’s to b’s).
 
@@ -83,15 +95,31 @@ In the equivalence class of ba, the number of b’s minus the number of a’s is
 There are invariants that describe each equivalence class. There are four equivalence classes that are 
 described in the subsequent question. Each equivalence class has some invariants that describe it based on an 
 initial condition. For example, if we have an odd number of a’s as a precondition, there will be an odd number 
-of a’s no matter how many rules we apply. Similarly, we have an invariant for another equivalence class in that 
-the number of b’s minus the number of a’s is even if there is at least one b. The rest of the invariants and 
+of a’s no matter how many rules we apply.
+
+> It is not so clear for what this is an example. It is an example for an invariant, I see this. But what is the "initial condition" and what is the class here?
+
+
+Similarly, we have an invariant for another equivalence class in that 
+the number of b’s minus the number of a’s is even if there is at least one b. 
+
+> Can you say how to prove that something is an invariant? Hint: The answer is by induction on the reduction rules of the ARS.
+
+> wouldnt it be better to say: the number of b’s minus the number of a’s is even and there is at least one b.
+> AND instead of IF?
+
+The rest of the invariants and 
 descriptions of the equivalence class are described below.
 
 - Can you describe all equivalence classes? (I didn’t do this one myself … don’t know exactly how much work it requires.)
 
 We can describe all four equivalence classes with six invariants (two of the equivalence classes are described with a 
 union of invariants). First off, there is an equivalence class that can be described by there being an even number of a’s. 
-Conversely, there is an equivalence class that can be described by there being an odd number of a’s. The third equivalence 
+Conversely, 
+
+> "Conversely" does not seem to be the right word here
+
+there is an equivalence class that can be described by there being an odd number of a’s. The third equivalence 
 class can be described by the notion that the number of b’s minus the number of a’s is odd and there must be at least one b. 
 The final equivalence class is described by the statement that the number of b’s minus the number of a’s is even and there 
 must be at least one b. 
