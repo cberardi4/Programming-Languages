@@ -40,25 +40,13 @@ function proves termination of your modified system?
 
 In order to make this terminating while keeping the two equivalence classes the same, the first two rules could be taken out.
 This way, the normal forms of the two classes are the same, and there is no more infinite loops for the first two rules. 
-Because you can apply the rules in any order, it is easiest to solve the ARS 
-
-> "solve" is not a good word here ... instead of "solve the ARS" say sth like "reduce strings in the ARS"
-by applying the last rule first to cancel out
-
-all of the b’s, and next apply the third rule and cancel out all the a’s. 
-
-> instead of "all the a's" say sth like "an even number of a's"
-
-Once you’re left with the last two rules, the 
-measure function is the length of the string.
+Because you can apply the rules in any order, it is easiest to reduce strings in the ARS is by applying the last rule first to cancel out an even number of b’s, and next apply the third rule and cancel and even number of a’s. Once you’re left with the last two rules, the measure function is the length of the string.
 
 
 - Write down a question or two about strings that can be answered using the ARS. Think about whether this amounts to giving 
 a semantics to the ARS.
 
-Does the number of a’s and b’s matter in order for the term to terminate? Do all strings have the same normal form?
-
-> what I was thinking of was: Is the number of a's even? or Is the number of a's odd?
+Is the number of a's even? Is the number of a's odd?
 
 _New Rules:_
 1. ba -> bbaa
