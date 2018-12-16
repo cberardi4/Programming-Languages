@@ -67,9 +67,7 @@ abab -> aabb using rule #3
 ```
 
 - Can one reduce ba to abbaababbab?
-No.
-
-> How do you know? Can you say why this is the correct answer?
+No. We know that we can't reduce ba to abbaababbab, because as will be shown below, the equivalence class of ba can be described by the rule that the number of b's minus the number of a's is even. In this case, we have 6 b's minus 5 a's and this is odd.
 
 - Can one reduce ba to abbaababbaba?
 Yes (equal number of a’s to b’s).
