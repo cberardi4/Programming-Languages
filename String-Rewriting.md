@@ -101,11 +101,7 @@ descriptions of the equivalence class are described below.
 
 We can describe all four equivalence classes with six invariants (two of the equivalence classes are described with a 
 union of invariants). First off, there is an equivalence class that can be described by there being an even number of a’s. 
-Conversely, 
-
-> "Conversely" does not seem to be the right word here
-
-there is an equivalence class that can be described by there being an odd number of a’s. The third equivalence 
+There is also an equivalence class that can be described by there being an odd number of a’s. The third equivalence 
 class can be described by the notion that the number of b’s minus the number of a’s is odd and there must be at least one b. 
 The final equivalence class is described by the statement that the number of b’s minus the number of a’s is even and there 
 must be at least one b. 
