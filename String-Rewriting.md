@@ -87,12 +87,9 @@ of a’s no matter how many rules we apply.
 
 
 Similarly, we have an invariant for another equivalence class in that 
-the number of b’s minus the number of a’s is even if there is at least one b. 
+the number of b’s minus the number of a’s is even and there is at least one b. 
 
 > Can you say how to prove that something is an invariant? Hint: The answer is by induction on the reduction rules of the ARS.
-
-> wouldnt it be better to say: the number of b’s minus the number of a’s is even and there is at least one b.
-> AND instead of IF?
 
 The rest of the invariants and 
 descriptions of the equivalence class are described below.
