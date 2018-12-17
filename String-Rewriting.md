@@ -79,17 +79,10 @@ In the equivalence class of ba, the number of b’s minus the number of a’s is
 - Can you list some properties of words that remain invariant under application of rules?[1]
 
 There are invariants that describe each equivalence class. There are four equivalence classes that are 
-described in the subsequent question. Each equivalence class has some invariants that describe it based on an 
-initial condition. For example, if we have an odd number of a’s as a precondition, there will be an odd number 
-of a’s no matter how many rules we apply.
-
-> It is not so clear for what this is an example. It is an example for an invariant, I see this. But what is the "initial condition" and what is the class here?
-
+described in the subsequent question. Each equivalence class has some invariants that describe it. For example, there is an equivalenc class that is described by the invariant that the number of b's minus the number of a's is even and there is at least one b. This describes the equivalence class of ba. 
 
 Similarly, we have an invariant for another equivalence class in that 
-the number of b’s minus the number of a’s is even and there is at least one b. 
-
-> Can you say how to prove that something is an invariant? Hint: The answer is by induction on the reduction rules of the ARS.
+the number of b’s minus the number of a’s is even and there is at least one b. We can see that this is invariant merely by analyzing the rules a little bit, but we can also prove that it's an invariant by induction on the rules of the ARS. This becomes very important for a more complicated ARS. 
 
 The rest of the invariants and 
 descriptions of the equivalence class are described below.
