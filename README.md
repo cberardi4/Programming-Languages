@@ -1,4 +1,21 @@
-# Timeline
+# Our Project and Blogs
+
+## Blogs
+#### Solidity and Our Project
+
+- [Introduction to Our Project](https://github.com/cberardi4/Programming-Languages/blob/master/Introduction%20to%20Project.md)
+- [Code Instructions](https://github.com/cberardi4/Programming-Languages/blob/master/Code_Instructions.md)
+- [Mapping](https://github.com/cberardi4/Programming-Languages/blob/master/Mapping.md)
+
+#### Programming Language Topics
+- [String Rewriting](https://github.com/cberardi4/Programming-Languages/blob/master/String-Rewriting.md)
+- [Termination](https://github.com/cberardi4/Programming-Languages/blob/master/Termination.md)
+- [Partial Correctness](https://github.com/cberardi4/Programming-Languages/blob/master/Partial-Correctness.md)
+- [Term Rewriting Systems](https://github.com/cberardi4/Programming-Languages/blob/master/Term-Rewriting-Systems.md)
+
+#### [Link](https://github.com/cberardi4/Programming-Languages/blob/master/VotingBallot.sol) to Our Voting Application
+
+## Timeline
 
 ### Prototype Stage (DUE DATE: October 30th, 2018):
 	
